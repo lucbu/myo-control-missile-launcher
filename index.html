@@ -1,0 +1,63 @@
+<script src="myo.js"></script>
+<script src="flex.myo.js"></script>
+<script src="vector.myo.js"></script>
+<script src="snap.myo.js"></script>
+<script src="hardtap.myo.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script src="state.js"></script>
+  <script src="direction.js"></script>
+  <script src="missile.js"></script>
+
+<style>
+  table {
+    margin: auto;
+    width: 500px;
+    max-width: 75%;
+  }
+  table tr {
+    width: 100%;
+  }
+  table tr td, table tr th {
+    width: 50%;
+    text-align: center;
+  }
+  #mode {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 3em;
+  }
+</style>
+
+<div id="mode"></div>
+
+<table id="info">
+  <tr><th>LEFT</th><th>RIGHT</th></tr>
+  <tr id="state">
+    <td class="left">#</td>
+    <td class="right">#</td>
+  </tr>
+  <tr id="vector">
+    <td class="left">#</td>
+    <td class="right">#</td>
+  </tr>
+  <tr id="direction">
+    <td class="left">#</td>
+    <td class="right">#</td>
+  </tr>
+  <tr id="emg">
+    <td class="left"></td>
+    <td class="right"></td>
+  </tr>
+</table>
+
+<div id="controls">
+  <input type="text" id="base-url" value="http://192.168.1.44:9999/" style="padding:10px 5px;width: 300px; text-align:center;">
+  <br><br>
+  <button class="reset">Reset Orientation</button>
+</div>
