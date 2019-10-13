@@ -1,8 +1,8 @@
 
 var timeoutOffset = 700;
 
-var $baseUrlInput = $('#base-url');
 var unlockTimeout;
+var baseUrl = 'http://192.168.1.44:9999/';
 
 var MODE = "WAITING";
 var DIRECTIONX = "CENTER";
@@ -111,7 +111,7 @@ jQuery(function($){
 });
 
 function callMovement(movement){
-  var url = 'http://192.168.1.44:9999/';
+  var url = baseUrl;
   switch(movement){
     case 'RIGHT':
       url += 'right';
@@ -129,6 +129,6 @@ function callMovement(movement){
   $.ajax(url+'?length=1');
 }
 function callFire(){
-  var url = 'http://192.168.1.44:9999/' + 'fire';
+  var url = baseUrl + 'fire';
   $.ajax(url+'?length=1');
 }
